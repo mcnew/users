@@ -21,7 +21,7 @@ public class User {
 
 	private Integer edad;
 
-	@Column(name = "fecha_de_alta")
+	@Column(name = "fecha_de_alta", insertable = false)
 	private Date fechaAlta;
 
 	private String estatus;

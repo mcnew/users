@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="us">
+<head>
+<meta charset="utf-8">
+<title>Users CRUD</title>
+<link href="jquery-ui.min.css" rel="stylesheet">
+<link href="styles.css" rel="stylesheet">
+</head>
+<body>
+	<h1>Users CRUD</h1>
+
+	<table id="datatable">
+		<thead>
+			<tr>
+				<th>id</th>
+				<th>nombre</th>
+				<th>edad</th>
+				<th>fecha de alta</th>
+				<th>estatus</th>
+			</tr>
+		</thead>
+		<tbody></tbody>
+	</table>
+	<button id="create-user">Nuevo usuario</button>
+
+	<div id="dialog-form" title="Crear usuario">
+		<p>Todos los campos son requeridos</p>
+		<form id="formCreate">
+			<fieldset>
+				<label for="nombre">Nombre</label> <input type="text" name="nombre"
+					id="nombre" class="text ui-widget-content ui-corner-all"> <label
+					for="edad">Edad</label> <input type="text" name="edad" id="edad"
+					class="text ui-widget-content ui-corner-all"> <label
+					for="estatus">Estatus</label> <input type="text" name="estatus"
+					id="estatus" class="text ui-widget-content ui-corner-all">
+
+				<input type="submit" tabindex="-1"
+					style="position: absolute; top: -1000px">
+			</fieldset>
+		</form>
+	</div>
+
+	<script src="jquery.js"></script>
+	<script src="jquery-ui.min.js"></script>
+	<script src="users.js"></script>
+</body>
+</html>

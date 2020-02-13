@@ -1,0 +1,13 @@
+
+#datatable {
+	width: 100%;
+}
+
+#datatable td {
+	border: black 1px solid;
+	text-align: center;
+}
+
+#datatable th {
+	border: black 1px solid;
+}
